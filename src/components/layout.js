@@ -66,6 +66,9 @@ const TemplateWrapper = ({ children }) => {
                 <li>
                   <Link to="/about">About</Link>
                 </li>
+                <li>
+                  <Link to="contact-us">Contact Us</Link>
+                </li>
               </ul>
               <p className="sidebar__social">
                 {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
