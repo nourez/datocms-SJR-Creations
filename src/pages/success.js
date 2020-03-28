@@ -34,9 +34,6 @@ const Success = () => (
             <label htmlFor="message" className="sheet__form__label message-box">Message</label>
             <textarea id="message" cols="40" rows="7" />
           </p>
-
-          <button>Submit</button>
-
         </form>
       </div>
     </div>
