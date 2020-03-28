@@ -12,27 +12,27 @@ const Contact = () => (
           <input type="hidden" name="form-name" value="contact-us" />
           <p className="full-width">
             <label htmlFor="name" className="sheet__form__label">Name </label>
-            <input id="name" className="sheet__form__input" type="text" />
+            <input id="name" name="Name" className="sheet__form__input" type="text"/>
           </p>
 
           <p>
             <label htmlFor="email" className="sheet__form__label">Email</label>
-            <input id="email" className="sheet__form__input" type="text"/>
+            <input id="email" name="Email" className="sheet__form__input" type="email"/>
           </p>
 
           <p>
             <label htmlFor="phone" className="sheet__form__label">Phone</label>
-            <input id="phone" className="sheet__form__input" type="text"/>
+            <input id="phone" name="Phone Number" className="sheet__form__input" type="tel"/>
           </p>
 
-          <p class="full-width">
+          <p className="full-width">
             <label htmlFor="topic" className="sheet__form__label">Topic</label>
-            <input id="topic" className="sheet__form__input" type="text"/>
+            <input id="topic" name="Topic" className="sheet__form__input" type="text"/>
           </p>
 
           <p className="full-width">
             <label htmlFor="message" className="sheet__form__label message-box">Message</label>
-            <textarea id="message" cols="40" rows="7" />
+            <textarea id="message" name="Message" cols="40" rows="7"/>
           </p>
 
           <button type="submit">Submit</button>
