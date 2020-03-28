@@ -7,7 +7,7 @@ const Contact = () => (
       <h1 className="sheet__title">Let's get in touch!</h1>
       <div className="sheet__body">
         <p>Send me an email and I'll get back to you as soon as possible</p>
-        <form className="sheet__form"Netlify>
+        <form className="sheet__form" netlify>
           <p className="full-width">
             <label htmlFor="name" className="sheet__form__label">Name </label>
             <input id="name" className="sheet__form__input" type="text" />
