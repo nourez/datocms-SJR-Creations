@@ -36,7 +36,7 @@ class Header extends Component {
           <Link to="/" className="sidebar-link">
             <button className="sidebar-item">STORE</button>
           </Link>
-          <Link to="/" className="sidebar-link">
+          <Link to="contact" className="sidebar-link">
             <button className="sidebar-item">CONTACT</button>
           </Link>
         </div>
@@ -61,7 +61,7 @@ class Header extends Component {
             STORE
           </button>
         </Link>
-        <Link to="/">
+        <Link to="contact">
           <button className={page === "contact" ? "button-active" : "button"}>
             CONTACT
           </button>

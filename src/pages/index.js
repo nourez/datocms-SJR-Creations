@@ -22,7 +22,7 @@ const IndexPage = () => {
   console.log(data);
   return (
   <Layout page={"home"}>
-   <div className="sheet__index">
+   <div className="sheet__centered">
      <h1 className="sheet__title">Hi, I'm Shelina, and this is SJR Creations</h1>
      <img src="https://www.supergurumi.com/wp-content/uploads/2019/11/Mouse-Amigurumi-Crochet-Pattern.jpg" alt="crafts I make" />
      <div className="sheet__body">
