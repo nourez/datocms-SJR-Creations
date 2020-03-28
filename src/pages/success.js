@@ -7,7 +7,7 @@ const Success = () => (
       <h1 className="sheet__title">Success!</h1>
       <div className="sheet__body">
         <p>Send me an email and I'll get back to you as soon as possible</p>
-        <form name="contact-us" className="sheet__form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact-us" className="sheet__form" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           <p className="full-width">
