@@ -12,27 +12,27 @@ const Success = () => (
           <input type="hidden" name="form-name" value="contact" />
           <p className="full-width">
             <label htmlFor="name" className="sheet__form__label">Name </label>
-            <input id="name" className="sheet__form__input" type="text" />
+            <input id="name" name="Name" type="text" className="sheet__form__input" type="text" />
           </p>
 
           <p>
             <label htmlFor="email" className="sheet__form__label">Email</label>
-            <input id="email" className="sheet__form__input" type="text"/>
+            <input id="email" name="Email" type="email" className="sheet__form__input" type="text"/>
           </p>
 
           <p>
             <label htmlFor="phone" className="sheet__form__label">Phone</label>
-            <input id="phone" className="sheet__form__input" type="text"/>
+            <input id="phone" name="Phone Number" type="tel" className="sheet__form__input" type="text"/>
           </p>
 
           <p class="full-width">
             <label htmlFor="topic" className="sheet__form__label">Topic</label>
-            <input id="topic" className="sheet__form__input" type="text"/>
+            <input id="topic" name="Topic" type="text" className="sheet__form__input" type="text"/>
           </p>
 
           <p className="full-width">
             <label htmlFor="message" className="sheet__form__label message-box">Message</label>
-            <textarea id="message" cols="40" rows="7" />
+            <textarea id="message" name="Message" cols="40" rows="7" />
           </p>
         </form>
       </div>
