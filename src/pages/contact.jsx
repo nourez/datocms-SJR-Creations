@@ -7,7 +7,8 @@ const Contact = () => (
       <h1 className="sheet__title">Let's get in touch!</h1>
       <div className="sheet__body">
         <p>Send me an email and I'll get back to you as soon as possible</p>
-        <form className="sheet__form" netlify>
+        <form name="contact-us" method="post" className="sheet__form" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <p className="full-width">
             <label htmlFor="name" className="sheet__form__label">Name </label>
             <input id="name" className="sheet__form__input" type="text" />
@@ -33,7 +34,9 @@ const Contact = () => (
             <textarea id="message" cols="40" rows="7" />
           </p>
 
+        <p>
           <button>Submit</button>
+        </p>
         </form>
       </div>
     </div>
