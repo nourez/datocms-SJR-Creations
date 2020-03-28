@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../components/Layout/layout'
 
-const Contact = () => (
+const Success = () => (
   <Layout page={'contact'} className="sheet">
     <div className="sheet">
-      <h1 className="sheet__title">Let's get in touch!</h1>
+      <h1 className="sheet__title">Success!</h1>
       <div className="sheet__body">
         <p>Send me an email and I'll get back to you as soon as possible</p>
         <form name="contact-us" className="sheet__form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
@@ -43,4 +43,4 @@ const Contact = () => (
   </Layout>
 );
 
-export default Contact;
+export default Success;
