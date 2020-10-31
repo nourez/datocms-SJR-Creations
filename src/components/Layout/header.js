@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import logo from "../../Images/logo-large.svg"
+import logo from "../../Images/logo_cropped.png"
 import menuIcon from "../../Images/menu.svg"
 
 class Header extends Component {
@@ -54,7 +54,7 @@ class Header extends Component {
           </button>
         </Link>
         <Link to="/">
-          <img src={logo} alt="Crafty Logo" className="logo"></img>
+          <img src={logo} alt="Crafty Logo" className="logo" height={500}></img>
         </Link>
         <Link to="/">
           <button className={page === "about" ? "button-active" : "button"}>
