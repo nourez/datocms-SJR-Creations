@@ -7,7 +7,7 @@ import Layout from "../components/Layout/layout"
 
 export default ({ data }) => (
   <Layout page={"work"}>
-    <article className="sheet">
+    <article className="sheet__centered">
       <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags} />
       <div className="sheet__inner">
         <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
