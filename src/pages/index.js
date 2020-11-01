@@ -4,7 +4,7 @@ import Masonry from 'react-masonry-component'
 import Img from 'gatsby-image'
 import Layout from "../components/Layout/layout"
 import Subheader from "../components/subheader/subheader"
-
+//comment blah blah
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query SocialQuery {
