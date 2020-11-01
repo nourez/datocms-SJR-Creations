@@ -14,7 +14,7 @@ const Work = ({ data }) => {
         Crochet
       </button>
       <button className={isPlate ? 'button-active' : 'button'} onClick={() => setIsPlate(true)}>
-        Plates
+        Ceramics
       </button>
     </header>
 

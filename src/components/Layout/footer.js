@@ -4,10 +4,10 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <a href="nourez.dev" className="footer-text">
+        <div>
           © {new Date().getFullYear()}
-          {` `} Nourez Rawji. All rights reserved.
-        </a>
+          {` `} <a href="https://github.com/nourez/">Nourez Rawji</a>. Built in React, datoCMS and Gatsby. All rights reserved.
+        </div>
       </footer>
     )
   }
