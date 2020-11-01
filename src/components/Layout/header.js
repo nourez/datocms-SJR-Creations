@@ -33,10 +33,10 @@ class Header extends Component {
           <Link to="/work" className="sidebar-link">
             <button className="sidebar-item">WORK</button>
           </Link>
-          <Link to="/" className="sidebar-link">
+          <Link to="/store" className="sidebar-link">
             <button className="sidebar-item">STORE</button>
           </Link>
-          <Link to="contact" className="sidebar-link">
+          <Link to="/contact" className="sidebar-link">
             <button className="sidebar-item">CONTACT</button>
           </Link>
         </div>
@@ -56,12 +56,12 @@ class Header extends Component {
         <Link to="/">
           <img src={logo} alt="Crafty Logo" className="logo" height={500}></img>
         </Link>
-        <Link to="/">
-          <button className={page === "about" ? "button-active" : "button"}>
+        <Link to="/store">
+          <button className={page === "store" ? "button-active" : "button"}>
             STORE
           </button>
         </Link>
-        <Link to="contact">
+        <Link to="/contact">
           <button className={page === "contact" ? "button-active" : "button"}>
             CONTACT
           </button>
