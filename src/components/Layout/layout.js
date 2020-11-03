@@ -22,7 +22,6 @@ class layout extends Component {
       <div className="main">
         <Header page={page} smallScreen={this.state.smallScreen} />
         <div>{children}</div>
-        <Footer />
       </div>
     )
   }

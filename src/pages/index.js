@@ -38,10 +38,10 @@ const IndexPage = () => {
   <Layout page={"home"}>
    <div className="sheet__centered">
      <h1 className="sheet__title">{data.allDatoCmsHome.nodes[0].homeTitle}</h1>
-     <img src={data.allDatoCmsHome.nodes[0].titleImage.url} alt="crafts I make" />
+     <img src={data.allDatoCmsHome.nodes[0].titleImage.url} alt="crafts I make" className="cover__image"/>
      <div className="sheet__body">
        <h3>{data.allDatoCmsHome.nodes[0].introBlurb}</h3>
-       <p>{data.allDatoCmsHome.nodes[0].introText}</p>
+       <p >{data.allDatoCmsHome.nodes[0].introText}</p>
        <h3>Checks out my social media</h3>
        <p className="sidebar__social">
          {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
