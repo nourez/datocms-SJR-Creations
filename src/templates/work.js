@@ -4,27 +4,31 @@ import {HelmetDatoCms} from 'gatsby-source-datocms';
 import Img from 'gatsby-image';
 import {graphql} from 'gatsby';
 import Layout from "../components/Layout/layout";
+import { useMedia } from 'react-media';
 
 export default ({ data }) => {
-  let [smallWindow, setSmallWindow] = useState(window.innerWidth);
-  useEffect(() => {
-    const resizeListener = () => {
-      // change width from the state object
-      setSmallWindow(window.innerWidth );
-      console.log(window.innerWidth);
-    };
-    // set resize listener
-    window.addEventListener('resize', resizeListener);
+  // let [smallWindow, setSmallWindow] = useState(900);
+  // useEffect(() => {
+  //   const resizeListener = () => {
+  //     // change width from the state object
+  //     setSmallWindow(window.innerWidth );
+  //     console.log(window.innerWidth);
+  //   };
+  //   // set resize listener
+  //   window.addEventListener('resize', resizeListener);
+  //
+  //   // clean up function
+  //   return () => {
+  //     // remove resize listener
+  //     window.removeEventListener('resize', resizeListener);
+  //   }
+  // }, [])
 
-    // clean up function
-    return () => {
-      // remove resize listener
-      window.removeEventListener('resize', resizeListener);
-    }
-  }, [])
+  const isSmallWindow = useMedia({query: "(max-width: 599px"});
+  console.log(isSmallWindow);
   return (
     <Layout page={"work"}>
-      <article className={smallWindow <= 840 ? "sheet__work" : "sheet__flex"}>
+      <article className={isSmallWindow ? "sheet__work" : "sheet__flex"}>
         <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags}/>
         <div className="sheet__inner">
           <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
